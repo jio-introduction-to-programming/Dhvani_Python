@@ -15,7 +15,7 @@ def test_animal():
     a = Animal('Lion', 10, 'Carnivore')
     assert a.name == 'Lion'
     assert a.age == 10
-    assert a.type == 'Carnivore'
+    assert a.species == 'Carnivore'
     a.change_age(11)
     assert a.age == 11
     assert a.get_age() == 11
@@ -25,7 +25,7 @@ def test_plant():
     p = Plant('Rose', 1, 'Flower')
     assert p.name == 'Rose'
     assert p.height == 1
-    assert p.type == 'Flower'
+    assert p.species == 'Flower'
     p.change_height(1.5)
     assert p.height == 1.5
     assert p.get_height() == 1.5
@@ -35,7 +35,7 @@ def test_inheritance():
     t = Tree('Oak', 20, 'Tree', 100)
     assert t.name == 'Oak'
     assert t.height == 20
-    assert t.type == 'Tree'
+    assert t.species == 'Tree'
     assert t.age == 100
     t.change_height(22)
     assert t.height == 22
